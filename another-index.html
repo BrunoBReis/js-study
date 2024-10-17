@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+  </head>
+  <body>
+    <button>Click me</button>
+    <script>
+        const foo = () => {
+            console.log('foo');
+        }
+
+        function anotherFoo() {
+            console.log('another foo');
+        }
+
+        function sayHello() {
+            return "Hello, ";
+        }
+
+        function greeting(helloMessage, name) {
+            console.log(helloMessage() + name);
+        }
+
+        const button = document.querySelector('button');
+        button.addEventListener('click', anotherFoo); // it doesn't need to have ()
+    </script>
+  </body>
+</html>
