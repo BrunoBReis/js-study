@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Changing</title>
+  </head>
+  <body>
+    <h1 id="abc">Hello</h1>
+    <button>Click me</button>
+    <script>
+      document.querySelector("button").addEventListener("click", () => {
+        document.getElementById("abc").innerHTML = "Hello, World!";
+      });
+    </script>
+  </body>
+</html>
